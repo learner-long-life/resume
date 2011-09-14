@@ -1,0 +1,388 @@
+% Paul Pham's Curriculum Vitae
+
+\documentclass[letter]{article}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{graphicx,color,hyperref}
+
+\pagestyle{fancyplain}
+\lhead[\fancyplain{}{\bfseries\thepage}]
+    {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]
+    {\fancyplain{}{Paul T. Pham \hfill\bfseries\thepage}}
+\cfoot[]{}
+\addtolength{\headheight}{1.6pt}
+
+\addtolength{\topmargin}{-0.75in}	% repairing LaTeX's huge margins...
+\addtolength{\textwidth}{.5in}	% same here....
+\addtolength{\marginparwidth}{.1in}	% The word ``Memberships'' is really long below
+\setlength{\headwidth}{\textwidth}
+\setlength{\parindent}{0mm}	% indented paragraphs just don't make it
+			   	% on a resume.  (My opinion; if you
+			   	% disagree, give this whatever value you
+			   	% want.) 
+\setlength{\textheight}{9.5in}	% more margin hacking.  I have a large
+			    	% resume to fit on one page.
+
+\begin{document}
+
+\thispagestyle{empty}           % no headers on the first page
+
+\reversemarginpar		% this puts the margin notes on the
+				% left-hand side of the resume.
+
+{\LARGE {\bf Paul T. Pham}}
+\par
+\vspace{.25in}
+E-mail: ppham@cs.washington.edu
+\hspace*{\fill}
+Dept. of Computer Science \& Engineering
+\linebreak
+Phone: (206) 859-0322
+\hspace*{\fill}
+University of Washington
+\linebreak
+Fax: (206) 543-2969
+\hspace*{\fill}
+Box 352350
+\linebreak
+\texttt{http://www.cs.washington.edu/homes/ppham}
+\hspace*{\fill}
+Seattle, WA 98195-2350
+
+				% address stuff.  The \hspace*{\fill} is
+				% necessary to get things laid out
+				% correctly.  The sizes fed to \vspace are
+				% variable, depending on how much
+				% whitespace you want, and how much
+				% stuff you're trying to fit on a page....
+\par
+\vspace{.25in}
+				% if the \marginpar is at the beginning
+				% of the line, it loses.  *sigh*.  This
+				% is a typical entry in a resume.   (I'm
+				% defining an entry as something
+				% important enough to have a marginal note
+				% setting it off.)  Give it some space
+				% with \vspace, use \par to break
+				% between paragraphs, enter your text,
+				% and place the \marginpar at the end.
+
+{\bf University of Washington} \hspace*{\fill}September 2005---December 2006
+\marginpar{{\bf Education}}
+\par
+Doctor of Philosophy in Computer Science (in progress)\hspace*{\fill}March 2010---Present\\
+\href{http://quantum.cs.washington.edu}{Quantum Computing Theory Group}\\
+Advisor: Aram Harrow
+\vspace{\baselineskip}
+\par
+
+{\bf Massachusetts Institute of Technology}
+\par
+Master of Engineering in Electrical Engineering \& Computer Science, February 2005.\\
+Graduate GPA: 4.7/5.0\\
+Thesis: \href{http://sourceforge.net/project/showfiles.php?group_id=129764&package_id=144780&release_id=307201}{A general-purpose pulse sequencer for quantum computing}.\\
+Advisor: Isaac Chuang\\
+\par
+Bachelor of Science in Electrical Engineering and Computer Science, June 2004.\\
+Undergraduate GPA: 4.2/5.0
+\vspace{\baselineskip}
+\par
+				% This is a slightly more complicated
+				% example.  \vspace gets a `doublespace'
+				% (1.5\baselineskip) between entries, and
+				% a  `singlespace' between paragraphs of
+				% an entry.
+				% (1.5\baselineskip means twice the value
+				% of \baselineskip).  
+
+{\bf {Pulse Programmer}} \hfill SourceForge\marginpar{{\bf Open Source}}
+\par
+{\em Project Admin, Lead Developer} \hfill January 2005---Present\marginpar{{\bf Experience}}
+\par
+\url{http://pulse-programmer.org}
+\par
+Built an open source reconfigurable radio-frequency signal generator
+for quantum computing and quantum information processing experiments.
+
+\vspace{\baselineskip}
+\par
+{\bf {Quantum Compiler}} \hfill SourceForge, Github
+\par
+{\em Project Admin, Lead Developer} \hfill January 2005---Present
+\par
+\url{http://quantum-compiler.org}
+\par
+Developed an open source code in Python and NumPy to implement the
+Solovay-Kitaev quantum compiling algorithm for generic, multi-qubit gates
+in SU(d). Simulated the Kitaev-Shen-Vyalyi quantum compiling algorithm in
+QCL and wrote code to measure its required resources. Accepted as
+qualifying examination project in the UW CSE Ph.D. program.
+
+\vspace{\baselineskip}
+\par
+{\bf {Microsoft Research}} \hfill Seattle, WA\marginpar{{\bf Research}}
+\par
+{\em Research Intern} \hfill June---August 2011\marginpar{{\bf Experience}}
+\par
+\href{http://research.microsoft.com/en-us/projects/Quantum/}{Quantum Computing Group}
+\par
+Mentor: Krysta Svore
+\par
+Designed a 2D quantum architecture for period-finding with depth $O(L \log L)$
+for factoring an $L$-bit integer.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of Washington Dept. of Physics and Astronomy}} \hfill Seattle, WA
+\par
+{\em Graduate Research Assistant} \hfill January---July 2007, May---June 2010
+\par
+\href{http://depts.washington.edu/qcomp/}{Trapped Ion Quantum Computing Group}
+\par
+Advisor: Prof. Boris Blinov
+\par
+Built a programmable radio-frequency system for ion trap control including
+photomultiplier tube input counting.
+
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf Max Planck Institute for Quantum Optics} \hfill Garching, Germany
+\par
+{\em Visiting Ph.D. Student} \hfill July 2005---August 2005
+\par
+\href{http://www.mpq.mpg.de/qsim/}{Quantum Analog Simulation Group}
+\par
+Advisor: Dr. Tobias Sch\"atz
+\par
+Built a programmable radio-frequency system for ion trap control with phase-coherent
+frequency-switching.
+
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf University of Innsbruck} \hfill Innsbruck, Austria
+\par
+{\em Visiting Ph.D. Student} \hfill February 2005---June 2005
+\par
+\href{http://heart-c704.uibk.ac.at/index.html}{Quantum Optics and Spectroscopy Group}
+\par
+Advisor: Univ. Prof. Rainer Blatt
+\par
+Built a programmable radio-frequency system for ion trap control with shaped amplitudes.
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf MIT Center for Bits and Atoms} \hfill Cambridge, Massachusetts
+\par
+{\em Graduate Research Assistant} \hfill September 2003---January 2005
+\par
+\href{http://web.mit.edu/~cua/www/quanta/}{quanta Research Group}
+\par
+Advisor: Prof. Isaac Chuang
+\par
+Designed and built instrumentation for quantum computing experiments.
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf Microsoft Research} \hfill Redmond, WA
+\par
+{\em Research Intern} \hfill June 2001---September 2001
+\par
+\href{http://research.microsoft.com/en-us/projects/mic/default.aspx}{Invisible Computing Group}\hfill June 2003---August 2003
+\par
+Mentors: Alessandro Forin, Johannes Helander
+\par
+Added work items to the scheduler of an embedded real-time kernel.
+Designed and assembled the electronics for a wireless sensor demo.
+
+\par
+
+%\newpage
+
+\vspace{\baselineskip}
+\par
+``Component-based Invisible Computing.''
+\marginpar{{\bf Publications}}\\
+A. Forin, J. Helander, \textbf{P. Pham}, J. Rajendiran.\\
+IEEE Realtime Embedded Systems Workshop Paper, December 2001.
+
+\vspace{\baselineskip}
+\par
+``Quantum Compiling''
+\marginpar{{\bf Posters}}\\
+\textbf{P. Pham}\\
+Southwest Quantum Information and Technology (SQuInT), February 2011.
+
+\vspace{\baselineskip}
+\par
+``Adiabatic Shelving''\\
+R. McClure, J. Booth, \textbf{P. Pham}, J. Wright, T. Noel, B. Blinov\\
+Southwest Quantum Information and Technology (SQuInT), February 2011.
+
+\vspace{\baselineskip}
+
+``Method and system for managing the execution of threads and data processing.''
+\marginpar{{\bf Patents}}\\
+A. Forin, J. Helander, \textbf{P. Pham}.\\
+U.S. Patent Application No. 20030233392.\\
+Filed on June 12, 2002.
+
+
+\vspace{\baselineskip}
+
+{\bf MIT ACM/IEEE Programming Competition} \hfill Cambridge, Massachusetts
+\marginpar{{\bf Activities}}
+
+{\em Contest Chair, Lead Developer, Organizer} \hfill 2001-2003
+\vspace{0.5\baselineskip}
+\par
+
+\url{http://web.mit.edu/ieee/6.370/2003/web/}
+
+\vspace{\baselineskip}
+
+
+{\bf University of Washington} \hfill Seattle, Washington
+\marginpar{{\bf Teaching}}
+
+\par
+{\em Teaching Assistant, Computer Science \& Engineering Department}
+\marginpar{{\bf Experience}}
+
+\vspace{0.5\baselineskip}
+\par
+The Hardware/Software Interface (\href{http://www.cs.washington.edu/education/courses/351/10sp/}{CSE 351})\hfill April---June 2010
+\par
+Professor Gaetano Borriello
+
+\vspace{0.5\baselineskip}
+\par
+Data Structures (\href{http://www.cs.washington.edu/education/courses/326/06au/}{CSE 326})\hfill September---December 2006
+\par
+Professor Larry Snyder
+
+\vspace{0.5\baselineskip}
+\par
+Software Development Tools (\href{http://www.cs.washington.edu/education/courses/303/06sp/}{CSE 303})\hfill April---June 2006
+\par
+Professor Magda Balazinska
+
+\vspace{0.5\baselineskip}
+\par
+Algorithms (\href{http://www.cs.washington.edu/education/courses/417/06wi/}{CSE 417})\hfill January---March 2006
+\par
+Professor Larry Ruzzo
+
+\vspace{0.5\baselineskip}
+\par
+Discrete Structures Class (\href{http://www.cs.washington.edu/education/courses/321/05au/}{CSE 321})\hfill September---December 2005
+\par
+Professors Dieter Fox \& Anna Karlin
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf MIT Elec. Eng. \& Computer Science Dept.} \hfill Cambridge, Massachusetts
+
+\vspace{0.5\baselineskip}
+\par
+{\em Teaching Assistant}
+\par
+Software Engineering Laboratory Class (\href{http://courses.csail.mit.edu/6.170/old-www/2004-Spring/admin-info/generalinfo.html#Staff}{6.170}) \hfill January 2004---May 2004
+\par
+Professor Rob Miller
+
+\vspace{0.5\baselineskip}
+\par
+{\em Lab Assistant}
+\par
+Software Engineering Laboratory Class (6.170) \hfill September 2002---May 2003
+\par
+Professors Michael Ernst \& Daniel Jackson
+\par
+
+\vspace{\baselineskip}
+\newpage
+
+{\bf Krysta Svore}
+\marginpar{{\bf References}}\\
+Researcher\\
+Microsoft Research\\
+1 Microsoft Way\\
+Redmond, WA 98052\\
+Phone: (425) 421-6996\\
+E-mail: \url{ksvore@microsoft.com}\\
+
+{\bf Alessando Forin}\\
+Principal Researcher\\
+Microsoft Research\\
+1 Microsoft Way\\
+Redmond, WA 98052\\
+Phone: (425) 936-1841\\
+E-mail: \url{sandrof@microsoft.com}\\
+
+{\bf Aram Harrow}\\
+Research Assistant Professor\\
+University of Washington, Department of Computer Science and Engineering\\
+Box 352350, Seattle, WA 98195-2350\\
+Phone: (206) 616-0733\\
+E-mail: \url{aram@cs.washington.edu}\\
+
+{\bf Boris Blinov}\\
+Associate Professor\\
+University of Washington, Department of Physics and Astronomy\\
+Box 351560, Seattle, WA 98195-1560\\
+Phone: (206) 221-3780\\
+E-mail: \url{blinov@uw.edu}\\
+
+{\bf Tobias Sch\"atz}\\
+Assistant Professor\\
+Max Planck Institute for Quantum Optics\\
+Hans-Kopfermann-Strasse 1\\
+D-85748 Garching, Germany\\
+Phone: +49-89-32905-199\\
+E-mail: \url{tobias.schaetz@mpq.mpg.de}\\
+
+{\bf Isaac Chuang}\\
+Professor\\
+Departments of Physics and Electrical Engineering \& Computer Science\\
+Massachusetts Institute of Technology\\
+77 Massachusetts Ave\\
+Boston, MA 02139\\
+Phone: (617) 253-1692\\
+E-mail: \url{ichuang@mit.edu}\\
+
+{\bf Rainer Blatt}\\
+University Professor of Physics\\
+Institute for Experimental Physics\\
+University of Innsbruck\\
+Technikerstrasse 25/4\\
+A-6020 Innsbruck\\
+Austria\\
+Phone: +43-512-507-6302\\
+E-mail: \url{Rainer.Blatt@uibk.ac.at}\\
+
+%{\bf Doug Irvine}\\
+%Software Development Manager\\
+%Amazon.com\\
+%701 5th Ave, Suite 1500, Seattle, WA 98104\\
+%Phone: (206) 266-3154\\
+%E-mail: \url{dirvine@amazon.com}\\
+
+%{\bf Lindsay Michimoto}\\
+%Graduate Program Advisor\\
+%University of Washington, Department of Computer Science and Engineering\\
+%Box 352350, Seattle, WA 98195-2350\\
+%Phone: (206) 543-5758\\
+%E-mail: \url{lindsaym@cs.washington.edu}\\
+
+\end{document}
+
+
+
+
