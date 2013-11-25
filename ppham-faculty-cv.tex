@@ -1,0 +1,608 @@
+% Paul Pham's Curriculum Vitae
+
+\documentclass[letter]{article}
+\usepackage{fancyhdr}
+\usepackage[osf]{mathpazo}
+\usepackage{lastpage}
+\usepackage[pdftex]{graphicx,color,hyperref}
+\usepackage{url}
+
+\newcommand{\customfoot}{\today \hfill \bfseries\thepage\ of \pageref*{LastPage}}
+
+\pagestyle{fancyplain}
+\lhead[\fancyplain{}{\bfseries\thepage of \pageref{LastPage}}]
+    {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]
+    {\fancyplain{}{Paul T. Pham \hfill}}
+\cfoot[]{\customfoot}
+\addtolength{\headheight}{1.6pt}
+
+\addtolength{\topmargin}{-0.75in}	% repairing LaTeX's huge margins...
+\addtolength{\textwidth}{1in}	% same here....
+\addtolength{\marginparwidth}{.1in}	% The word ``Memberships'' is really long below
+\setlength{\headwidth}{\textwidth}
+\setlength{\parindent}{0mm}	% indented paragraphs just don't make it
+			   	% on a resume.  (My opinion; if you
+			   	% disagree, give this whatever value you
+			   	% want.) 
+\setlength{\textheight}{9.25in}	% more margin hacking.  I have a large
+			    	% resume to fit on one page.
+
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \fancyfoot[C]{\customfoot}
+}
+
+\begin{document}
+
+\thispagestyle{firststyle} % no headers, but custom footers on the first page
+
+\reversemarginpar		% this puts the margin notes on the
+				% left-hand side of the resume.
+
+{\LARGE {\bf Paul T. Pham}}
+\par
+\vspace{.25in}
+E-mail: \href{mailto:phamp@evergreen.edu}{phamp@evergreen.edu}
+\hspace*{\fill}
+The Evergreen State College
+\linebreak
+Phone: (360) 867-5911
+\hspace*{\fill}
+2700 Evergreen Parkway NW
+\linebreak
+Fax: (360) 867-5102
+\hspace*{\fill}
+Lab II 2251
+\linebreak
+\url{http://www.evergreen.edu/faculty/instructor/phamp}
+\hspace*{\fill}
+Olympia, WA 98505
+
+				% address stuff.  The \hspace*{\fill} is
+				% necessary to get things laid out
+				% correctly.  The sizes fed to \vspace are
+				% variable, depending on how much
+				% whitespace you want, and how much
+				% stuff you're trying to fit on a page....
+\par
+\vspace{.25in}
+				% if the \marginpar is at the beginning
+				% of the line, it loses.  *sigh*.  This
+				% is a typical entry in a resume.   (I'm
+				% defining an entry as something
+				% important enough to have a marginal note
+				% setting it off.)  Give it some space
+				% with \vspace, use \par to break
+				% between paragraphs, enter your text,
+				% and place the \marginpar at the end.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%I\marginpar{{\bf Teaching\\ Philosophy}} am excited about teaching computer
+%science using the following techniques:
+%storytelling (the connection of topics using unifying themes and simple narratives),
+%personal involvement (doing projects alongside students), and
+%continuously gathering and responding to feedback.
+
+%\vspace{\baselineskip}
+%\par
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf University of Washington (UW)}
+\marginpar{{\bf Education}}
+\par
+Doctor of Philosophy in Computer Science \hspace*{\fill}September 2013\\
+%Expected graduation date June 2013. Current GPA: 3.78/4.0\\
+%\href{http://quantum.cs.washington.edu}{Quantum Computing Theory Group}\\
+Thesis: \emph{Low-depth quantum architectures for factoring}.
+Advised by \href{http://www.cs.washington.edu/people/faculty/aram/}{Aram Harrow}
+\vspace{\baselineskip}
+\par
+
+{\bf Massachusetts Institute of Technology (MIT)}
+\par
+Master of Engineering in Electrical Engineering \& Computer Science, February 2005.\\
+%Graduate GPA: 4.7/5.0\\
+Thesis: \href{http://sourceforge.net/project/showfiles.php?group_id=129764&package_id=144780&release_id=307201}{\emph{A general-purpose pulse sequencer for quantum computing}}.
+Advised by \href{http://feynman.mit.edu/ike/homepage/index.html}{Isaac Chuang}\\
+\par
+Bachelor of Science in Electrical Engineering and Computer Science, June 2004.\\
+%Undergraduate GPA: 4.2/5.0
+\vspace{\baselineskip}
+\par
+				% This is a slightly more complicated
+				% example.  \vspace gets a `doublespace'
+				% (1.5\baselineskip) between entries, and
+				% a  `singlespace' between paragraphs of
+				% an entry.
+				% (1.5\baselineskip means twice the value
+				% of \baselineskip).  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf The Evergreen State College} \hfill Olympia, Washington
+\marginpar{{\bf Employment \& \\ Teaching \\ Experience}}
+\vspace{0.5\baselineskip}
+\par
+{\em Tenure-Track Member of the Faculty}\hfill September 2013---Present
+
+\vspace{0.5\baselineskip}
+\par
+\href{http://ada.evergreen.edu/csf/python13f/}{Programming as a Way of Life}\hfill Fall 2013
+
+\vspace{0.5\baselineskip}
+\par
+
+{\bf UW Computer Science \& Engineering Dept.} \hfill Seattle, Washington
+\vspace{0.5\baselineskip}
+\par
+{\em Instructor}
+
+\vspace{0.5\baselineskip}
+\par
+Quantum Computing for Beginners (\href{http://www.cs.washington.edu/education/courses/490q/12au/}{CSE 490Q})\hfill September 2012---Present
+\par
+An original course to teach the basics of quantum computing and D-Wave programming.
+
+\vspace{0.5\baselineskip}
+\par
+{\em Teaching Assistant}
+
+\vspace{0.5\baselineskip}
+\par
+Advanced Internet Services (\href{http://www.cs.washington.edu/education/courses/454/12wi/}{CSE 454})\hfill January 2012---March 2012
+\par
+Professor Oren Etzioni
+
+\vspace{0.5\baselineskip}
+\par
+The Hardware/Software Interface (\href{http://www.cs.washington.edu/education/courses/351/10sp/}{CSE 351})\hfill April---June 2010
+\par
+Professor Gaetano Borriello
+
+\vspace{0.5\baselineskip}
+\par
+Data Structures (\href{http://www.cs.washington.edu/education/courses/326/06au/}{CSE 326})\hfill September---December 2006
+\par
+Professor Larry Snyder
+
+\vspace{0.5\baselineskip}
+\par
+Software Development Tools (\href{http://www.cs.washington.edu/education/courses/303/06sp/}{CSE 303})\hfill April---June 2006
+\par
+Professor Magda Balazinska
+
+\vspace{0.5\baselineskip}
+\par
+Algorithms (\href{http://www.cs.washington.edu/education/courses/417/06wi/}{CSE 417})\hfill January---March 2006
+\par
+Professor Larry Ruzzo
+
+\vspace{0.5\baselineskip}
+\par
+Discrete Structures Class (\href{http://www.cs.washington.edu/education/courses/321/05au/}{CSE 321})\hfill September---December 2005
+\par
+Professors Dieter Fox \& Anna Karlin
+\par
+
+\vspace{0.5\baselineskip}
+\par
+{\bf MIT Elec. Eng. \& Computer Science Dept.} \hfill Cambridge, Massachusetts
+
+\vspace{0.5\baselineskip}
+\par
+{\em Teaching Assistant}
+\par
+Software Engineering Laboratory Class (\href{http://courses.csail.mit.edu/6.170/old-www/2004-Spring/admin-info/generalinfo.html#Staff}{6.170}) \hfill January 2004---May 2004
+\par
+Professor Rob Miller
+
+\vspace{0.5\baselineskip}
+\par
+{\em Lab Assistant}
+\par
+Software Engineering Laboratory Class (6.170) \hfill September 2002---May 2003
+\par
+Professors Michael Ernst \& Daniel Jackson
+\par
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+\emph{A 2D nearest-neighbor quantum architecture for factoring.}
+\marginpar{{\bf Publications}}\\
+\textbf{P. Pham}, K.M. Svore. \hfill \url{http://arxiv.org/abs/1207.6655}\\
+Reversible Computation Workshop, June 2012 \hfill Copenhagen, Denmark
+
+\vspace{\baselineskip}
+\par
+\emph{Quantum compiling single-qubit gates with the Kitaev-Shen-Vyalyi procedure.}\\
+\textbf{P. Pham}\\
+Ph.D. qualifying examination report.
+
+\vspace{\baselineskip}
+\par
+\emph{Component-based invisible computing.}\\
+A. Forin, J. Helander, \textbf{P. Pham}, J. Rajendiran.\\
+IEEE Realtime Embedded Systems Workshop, December 2001 \hfill London, UK
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+\emph{A 2D quantum architecture for factoring in sub-quadratic depth.}
+\marginpar{{\bf Posters}}\\
+\textbf{P. Pham}\\
+Quantum Information Processing (QIP) Conference, December 2011.
+
+\vspace{\baselineskip}
+\par
+\emph{Quantum compiling with Kitaev-Shen-Vyalyi.}\\
+\textbf{P. Pham}\\
+Southwest Quantum Information and Technology (SQuInT), February 2011.
+
+\vspace{\baselineskip}
+\par
+\emph{Adiabatic shelving to the $5D_{5/2}$ state in trapped barium ions.}\\
+R. McClure, J. Booth, \textbf{P. Pham}, J. Wright, T. Noel, B. Blinov\\
+Southwest Quantum Information and Technology (SQuInT), February 2011.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+
+\emph{Method and system for managing the execution of threads and data processing.}
+\marginpar{{\bf Patents}}\\
+A. Forin, J. Helander, \textbf{P. Pham}.\\
+\href{http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&p=1&f=G&l=50&d=PTXT&S1=20030233392&OS=20030233392&RS=20030233392}{U.S. Patent No. 7,246,353}\\
+Filed on June 12, 2002.
+Granted on July 17, 2007.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {University of Puget Sound}} \hfill Tacoma, Washington\marginpar{{\bf Invited\\ Talks}}
+\par
+{\em The mathematics of quantum computing} \hfill November 2013
+\par
+Hosted by Prof. Carl Toews.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of British Columbia}} \hfill Vancouver, Canada
+\par
+{\em Quantum architecture, compiling, and 2D factoring} \hfill September 2012
+\par
+Hosted by Prof. Robert Raussendorf.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of Innsbruck}} \hfill Innsbruck, Austria
+\par
+{\em Quantum architecture, compiling, and 2D factoring} \hfill July 2012
+\par
+Hosted by Prof. Rainer Blatt.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of Freiburg}} \hfill Freiburg, Germany
+\par
+{\em Quantum architecture, compiling, and 2D factoring} \hfill July 2012
+\par
+Hosted by Prof. Tobias Sch\"atz.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of Aarhus}} \hfill Aarhus, Denmark
+\par
+{\em Quantum architecture, compiling, and 2D factoring} \hfill July 2012
+\par
+Hosted by Prof. Michael Drewsen.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {UW Computer Science \& Engineering Dept.}} \hfill Seattle, WA\marginpar{{\bf Students\\ Mentored}}
+\par
+
+\vspace{0.5\baselineskip}
+\par
+\emph{Noah Siegel} \hfill September 2012---Present
+\par
+Improving the exponential dimensional dependence in the quantum compiling
+procedure of Kitaev, Shen, Vyalyi.
+
+\vspace{0.5\baselineskip}
+\par
+\emph{Andrea McCool} \hfill June 2010---Present
+\par
+Mapping Shor's algorithm to a nearest-neighbor 2D quantum architecture in
+constant circuit depth.
+
+\vspace{0.5\baselineskip}
+\par
+\emph{Jeffrey Booth, Jr.} \hfill January 2010---May 2012
+\par
+Honors senior thesis. Meet-in-the-middle optimizations for a quantum compiler.
+
+\vspace{0.5\baselineskip}
+\par
+\emph{Harshad Petwe} \hfill June 2010---August 2011
+\par
+Constructing a programmable pulse generator for controlling trapped atomic
+ions in quantum information processing experiments at the Max Planck Institute
+for Quantum Optics.
+
+\vspace{0.5\baselineskip}
+\par
+\emph{Rob McClure} \hfill January 2010---March 2011
+\par
+\emph{John Williams} \hfill January 2010---May 2010
+\par
+\emph{David Nufer} \hfill January 2010---May 2010
+\par
+Extending a programmable pulse generator for controlling trapped atomic
+ions to perform adiabatic shelving of electron energy states in the UW
+Physics Department.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+
+{\bf MIT ACM/IEEE Programming Competition} \hfill Cambridge, Massachusetts
+\marginpar{{\bf Activities}}
+
+{\em Contest Chair, Lead Developer, Organizer} \hfill 2001-2003
+\vspace{0.5\baselineskip}
+\par
+
+\url{http://www.battlecode.org}\\
+\url{http://web.mit.edu/ieee/6.370/2003/web/}\\
+Created a long-running
+programming competition for distributed software agents to play a
+a real-time strategy game. Winning student competitors were matched with
+corporate sponsors which now include
+Dropbox, Blizzard Entertainment, Amazon, Google, Oracle, D.E. Shaw, and Akamai.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Pulse Programmer}} \hfill SourceForge\marginpar{{\bf Software}}
+\par
+{\em Project Admin, Lead Developer} \hfill January 2005---Present
+\par
+\url{http://pulse-programmer.org}
+\par
+Built an open source reconfigurable radio-frequency signal generator
+for quantum computing and quantum information processing experiments.
+In use at eight experimental trapped ion research groups around the world.
+
+\vspace{\baselineskip}
+\par
+{\bf {Quantum Compiler}} \hfill SourceForge, Github
+\par
+{\em Project Admin, Lead Developer} \hfill January 2005---Present
+\par
+\url{http://quantum-compiler.org}
+\par
+Developed an open source code in Python and NumPy to implement the
+Solovay-Kitaev quantum compiling algorithm for generic, multi-qubit gates
+in SU(d). Simulated the Kitaev-Shen-Vyalyi quantum compiling algorithm in
+QCL and wrote code to measure its required resources. Accepted as
+qualifying examination project in the UW CSE Ph.D. program.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Max E. Gellert Fellowship}} \hfill 2005-2006\marginpar{{\bf Awards}}\\
+University of Washington, College of Engineering \hfill Seattle, WA
+
+\par
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Microsoft Research}} \hfill Seattle, WA\marginpar{{\bf Research\\ Experience}}
+\par
+{\em Research Intern} \hfill June---August 2011
+\par
+\href{http://research.microsoft.com/en-us/groups/quarc/default.aspx}{Quantum Architectures and Computation Group}
+\par
+Mentor: Krysta Svore
+\par
+Designed a 2D nearest-neighbor quantum architecture for period-finding with
+depth $O(L \log L)$ for factoring an $L$-bit integer. Pending patent
+application.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of Washington Dept. of Physics and Astronomy}} \hfill Seattle, WA
+\par
+{\em Graduate Research Assistant} \hfill January---July 2007, May---June 2010
+\par
+\href{http://depts.washington.edu/qcomp/}{Trapped Ion Quantum Computing Group}
+\par
+Advisor: Prof. Boris Blinov
+\par
+Built a programmable radio-frequency system for ion trap control including
+photomultiplier tube input counting.
+
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf Max Planck Institute for Quantum Optics} \hfill Garching, Germany
+\par
+{\em Visiting Ph.D. Student} \hfill July 2005---August 2005
+\par
+\href{http://www.mpq.mpg.de/qsim/}{Quantum Analog Simulation Group}
+\par
+Advisor: Dr. Tobias Sch\"atz
+\par
+Built a programmable radio-frequency system for ion trap control with phase-coherent
+frequency-switching.
+
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf University of Innsbruck} \hfill Innsbruck, Austria
+\par
+{\em Visiting Ph.D. Student} \hfill February 2005---June 2005
+\par
+\href{http://heart-c704.uibk.ac.at/index.html}{Quantum Optics and Spectroscopy Group}
+\par
+Advisor: Univ. Prof. Rainer Blatt
+\par
+Built a programmable radio-frequency system for ion trap control with shaped amplitudes.
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf MIT Center for Bits and Atoms} \hfill Cambridge, Massachusetts
+\par
+{\em Graduate Research Assistant} \hfill September 2003---January 2005
+\par
+\href{http://web.mit.edu/~cua/www/quanta/}{quanta Research Group}
+\par
+Advisor: Prof. Isaac Chuang
+\par
+Designed and built instrumentation for quantum computing experiments.
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf Microsoft Research} \hfill Redmond, WA
+\par
+{\em Research Intern} \hfill June 2001---September 2001
+\par
+\href{http://research.microsoft.com/en-us/projects/mic/default.aspx}{Invisible Computing Group}\hfill June 2003---August 2003
+\par
+Mentors: Alessandro Forin, Johannes Helander
+\par
+Added work items to the scheduler of an embedded real-time kernel.
+Designed and assembled the electronics for a wireless sensor demo.
+
+\par
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Amazon.com}} \hfill Seattle, WA\marginpar{{\bf Work\\ Experience}}
+\par
+{\em Software Development Engineer} \hfill January 2008---June 2009
+\par
+\href{http://www.endless.com}{Endless.com Designer Shoes and Handbags}
+\par
+Manager: Doug Irvine
+\par
+Maintained a large-scale, high-availability
+retail website built using Apache Tomcat, J2EE,
+the Spring dependency-injection framework, jQuery, and Ajax. Implemented a
+pipeline for customers to write product reviews.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf Aram Harrow}
+\marginpar{{\bf References}}\\
+Research Assistant Professor\\
+University of Washington, Department of Computer Science \& Engineering\\
+Box 352350, Seattle, WA 98195-2350\\
+Phone: (206) 616-0733\\
+E-mail: \url{aram@cs.washington.edu}\\
+
+{\bf Gaetano Borriello}\\
+Jerre D. Noe Professor of Computer Science \& Engineering\\
+University of Washington, Department of Computer Science \& Engineering\\
+Box 352350, Seattle, WA 98195-2350\\
+Phone: (206) 685-9432\\
+E-mail: \url{gaetano@cs.washington.edu}\\
+
+{\bf Oren Etzioni}\\
+Washington Research Foundation Entrepreneurship Professor of Computer Science \& Eng.\\
+University of Washington, Department of Computer Science \& Engineering\\
+Box 352350, Seattle, WA 98195-2350\\
+Phone: (206) 685-3035\\
+E-mail: \url{etzioni@cs.washington.edu}\\
+
+{\bf Michael D. Ernst}\\
+Associate Professor of Computer Science \& Engineering\\
+University of Washington, Department of Computer Science \& Engineering\\
+Box 352350, Seattle, WA 98195-2350\\
+Phone: (206) 221-0965\\
+E-mail: \url{mernst@cs.washington.edu}\\
+
+{\bf Krysta Svore}\\
+Researcher\\
+Microsoft Research\\
+1 Microsoft Way\\
+Redmond, WA 98052\\
+Phone: (425) 421-6996\\
+E-mail: \url{ksvore@microsoft.com}\\
+
+{\bf Boris Blinov}\\
+Associate Professor\\
+University of Washington, Department of Physics \& Astronomy\\
+Box 351560, Seattle, WA 98195-1560\\
+Phone: (206) 221-3780\\
+E-mail: \url{blinov@uw.edu}\\
+
+{\bf Tobias Sch\"atz}\\
+Assistant Professor\\
+Max Planck Institute for Quantum Optics\\
+Hans-Kopfermann-Strasse 1\\
+D-85748 Garching, Germany\\
+Phone: +49-89-32905-199\\
+E-mail: \url{tobias.schaetz@mpq.mpg.de}\\
+
+%{\bf Alessandro Forin}\\
+%Principal Researcher\\
+%Microsoft Research\\
+%1 Microsoft Way\\
+%Redmond, WA 98052\\
+%Phone: (425) 936-1841\\
+%E-mail: \url{sandrof@microsoft.com}\\
+
+%{\bf Rainer Blatt}\\
+%University Professor of Physics\\
+%Institute for Experimental Physics\\
+%University of Innsbruck\\
+%Technikerstrasse 25/4\\
+%A-6020 Innsbruck\\
+%Austria\\
+%Phone: +43-512-507-6302\\
+%E-mail: \url{Rainer.Blatt@uibk.ac.at}\\
+
+%{\bf Isaac Chuang}\\
+%Professor\\
+%Departments of Physics and Electrical Engineering \& Computer Science\\
+%Massachusetts Institute of Technology\\
+%77 Massachusetts Ave\\
+%Boston, MA 02139\\
+%Phone: (617) 253-1692\\
+%E-mail: \url{ichuang@mit.edu}\\
+
+%{\bf Doug Irvine}\\
+%Software Development Manager\\
+%Amazon.com\\
+%701 5th Ave, Suite 1500, Seattle, WA 98104\\
+%Phone: (206) 266-3154\\
+%E-mail: \url{dirvine@amazon.com}\\
+
+%{\bf Lindsay Michimoto}\\
+%Graduate Program Advisor\\
+%University of Washington, Department of Computer Science and Engineering\\
+%Box 352350, Seattle, WA 98195-2350\\
+%Phone: (206) 543-5758\\
+%E-mail: \url{lindsaym@cs.washington.edu}\\
+
+\end{document}
+
+
+
+
