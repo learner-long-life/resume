@@ -1,0 +1,369 @@
+% Paul Pham's Curriculum Vitae
+
+\documentclass[letter]{article}
+\usepackage{fancyhdr}
+\usepackage[osf]{mathpazo}
+\usepackage[pdftex]{graphicx,color,hyperref}
+
+\pagestyle{fancyplain}
+\lhead[\fancyplain{}{\bfseries\thepage}]
+    {\fancyplain{}{\bfseries\rightmark}}
+\rhead[\fancyplain{}{\bfseries\leftmark}]
+    {\fancyplain{}{Paul T. Pham \hfill\bfseries\thepage}}
+\cfoot[]{}
+\addtolength{\headheight}{1.6pt}
+
+\addtolength{\topmargin}{-0.75in}	% repairing LaTeX's huge margins...
+\addtolength{\textwidth}{1.1in}	% same here....
+%\addtolength{\marginparwidth}{.1in}	% The word ``Memberships'' is really long below
+\setlength{\headwidth}{\textwidth}
+\setlength{\parindent}{0mm}	% indented paragraphs just don't make it
+			   	% on a resume.  (My opinion; if you
+			   	% disagree, give this whatever value you
+			   	% want.) 
+\setlength{\textheight}{9.5in}	% more margin hacking.  I have a large
+			    	% resume to fit on one page.
+
+\begin{document}
+
+\thispagestyle{empty}           % no headers on the first page
+
+\reversemarginpar		% this puts the margin notes on the
+				% left-hand side of the resume.
+
+{\LARGE {\bf Paul T. Pham}}
+\par
+\vspace{.25in}
+E-mail: \href{mailto:ppham@local-box.org}{ppham@local-box.org}
+\hspace*{\fill}
+199 Ellery St, Apt 1
+\linebreak
+Phone: (253) 235-9025
+\hspace*{\fill}
+Brooklyn, NY 11206
+
+				% address stuff.  The \hspace*{\fill} is
+				% necessary to get things laid out
+				% correctly.  The sizes fed to \vspace are
+				% variable, depending on how much
+				% whitespace you want, and how much
+				% stuff you're trying to fit on a page....
+\par
+\vspace{.25in}
+				% if the \marginpar is at the beginning
+				% of the line, it loses.  *sigh*.  This
+				% is a typical entry in a resume.   (I'm
+				% defining an entry as something
+				% important enough to have a marginal note
+				% setting it off.)  Give it some space
+				% with \vspace, use \par to break
+				% between paragraphs, enter your text,
+				% and place the \marginpar at the end.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf University of Washington} \hspace*{\fill}September 2005---December 2006
+\marginpar{{\bf Education}}
+\par
+Ph.D. in Computer Science \hspace*{\fill}March 2010---Present\\
+Thesis: \href{https://dl.acm.org/doi/book/10.5555/2604498}{Low-depth quantum architectures for factoring.} Advised by Aram Harrow, Dave Bacon\\
+\vspace{0.5\baselineskip}
+
+{\bf Massachusetts Institute of Technology}
+\par
+M.Eng. in Electrical Engineering \& Computer Science \hspace*{\fill}February 2005.\\
+Thesis: \href{https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.120.6651&rank=1}{A general-purpose pulse sequencer for quantum computing.}{} Advised by Isaac Chuang\\
+\par
+Bachelor of Science in Electrical Engineering and Computer Science, June 2004.
+\vspace{\baselineskip}
+\par
+				% This is a slightly more complicated
+				% example.  \vspace gets a `doublespace'
+				% (1.5\baselineskip) between entries, and
+				% a  `singlespace' between paragraphs of
+				% an entry.
+				% (1.5\baselineskip means twice the value
+				% of \baselineskip).  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Etsy}} \hfill Brooklyn, New York\marginpar{{\bf Software}}
+\par
+{\em Senior Software Engineer, Search Infrastructure} \hfill May 2016---January 2018\marginpar{{\bf Engineering}}
+\par
+Manager: Gordon Radlein
+\vspace{0.5\baselineskip}
+\par
+Technologies: Java, Shell Scripting, Python, Docker, Lucene, ElasticSearch, Linux, Grafana, PagerDuty, Continuous Integration
+\vspace{0.5\baselineskip}
+\par
+Design and implement distributed, highly-available infrastructure for product search that powers Etsy. Earned \$700k+ in additional annualized revenue by running a UI experiment with A/B tests. Tech lead for a new search indexing / inference pipeline.
+
+\vspace{\baselineskip}
+\par
+{\bf {D-Wave Systems, Inc.}} \hfill Burnaby, British Columbia
+\par
+{\em Software Development Engineer, Retail Customer Experience} \hfill January 2008---June 2009
+\par
+Manager: Doug Irvine
+\vspace{0.5\baselineskip}
+\par
+Technologies: Python, MATLAB, Shell Scripting
+\vspace{0.5\baselineskip}
+\par
+Accelerated machine learning algorithms using a GPU and Theano. Automated testing and training of models.
+
+\vspace{\baselineskip}
+\par
+{\bf {Amazon.com}} \hfill Seattle, Washington
+\par
+{\em Software Development Engineer, Retail Customer Experience} \hfill January 2008---June 2009
+\par
+Manager: Doug Irvine
+\vspace{0.5\baselineskip}
+\par
+Technologies: Java, J2EE, Tomcat, Spring, jQuery, Selenium
+\vspace{0.5\baselineskip}
+\par
+Maintained a large-scale, high-availability
+retail website. Implemented a pipeline for customers to write product reviews.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Private Voting}} \marginpar{{\bf Open}}
+\par
+{\em Project Admin, Lead Developer} \hfill January 2005---Present\marginpar{{\bf Source}}
+\par
+\url{http://github.com/invisible-college/democracy}
+\par
+Developed a private trading system for zero-knowledge assets
+using AZTEC and Ethereum. Designed architecture, scoped out
+requirements, and managed other designers and developers
+towards a product launch.
+
+\vspace{\baselineskip}
+\par
+{\bf {Pulse Programmer for Quantum Computing}}
+\par
+{\em Project Admin, Lead Developer} \hfill January 2005---Present
+\par
+\url{http://pulse.sf.net}
+\par
+Built an open source reconfigurable radio-frequency signal generator
+for quantum information processing experiments.
+In use at eight experimental trapped ion research groups around the world.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\bf CodeFellows} \hfill Seattle, Washington
+\marginpar{{\bf Teaching}}
+
+\par
+{\em Instructor} \hfill March 2015---October 2015
+\marginpar{{\bf Experience}}
+
+\vspace{0.5\baselineskip}
+\par
+\href{https://www.codefellows.org/courses/foundations-1/computer-science-and-web-development}{Foundations of Computer Science and Web Development}\hfill April---May 2015
+\vspace{0.5\baselineskip}
+\par
+\href{https://www.codefellows.org/courses/foundations-2/python}{Python Foundations II}\hfill March---October 2015
+
+\vspace{\baselineskip}
+\par
+
+{\bf The Evergreen State College} \hfill Olympia, Washington
+
+\par
+{\em Tenure-Track Member of the Faculty}\hfill September 2013---September 2014
+
+\vspace{0.5\baselineskip}
+\par
+\href{http://ada.evergreen.edu/csf/python13f/}{Programming as a Way of Life}\hfill Fall 2013---Spring 2014
+\vspace{0.5\baselineskip}
+\par
+\href{http://archives.evergreen.edu/catalogs/2013-14/programs/thedesignofcomputationalthings-12305/index.html}{Design of Computational Things}\hfill Spring 2014
+
+\vspace{\baselineskip}
+\par
+
+{\bf University of Washington} \hfill Seattle, Washington
+
+\par
+{\em Instructor, Computer Science \& Engineering Department}
+
+\vspace{0.5\baselineskip}
+\par
+Quantum Computing for Beginners (\href{http://www.cs.washington.edu/education/courses/490q/12au/}{CSE 490Q})\hfill September 2012---Present
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+``Introductory programming meets the real world: using real problems and data in CS1.''
+\marginpar{{\bf Publications}}\\
+Ruth Anderson, Michael D. Ernst, Robort Ordo\~{n}ez, \textbf{Paul Pham}, Steven A. Wolfram.\\
+\url{https://dl.acm.org/citation.cfm?id=2538994}\\
+SIGCSE 2014, Proceedings of the 45th ACM technical symposium on computer science education.
+
+\vspace{\baselineskip}
+\par
+``A 2D nearest-neighbor quantum architecture for factoring.''\\
+\textbf{P. Pham}, K.M. Svore. \hfill \url{http://arxiv.org/abs/1207.6655}\\
+Reversible Computation Workshop, June 2012 \hfill Copenhagen, Denmark
+
+\vspace{\baselineskip}
+\par
+``Component-based invisible computing.''\\
+A. Forin, J. Helander, \textbf{P. Pham}, J. Rajendiran.\\
+IEEE Realtime Embedded Systems Workshop, December 2001 \hfill London, UK
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{\baselineskip}
+
+``\href{https://patents.justia.com/patent/9779359}{Quantum arithmetic on two-dimensional quantum architectures.}''
+\marginpar{{\bf Patents}}\\
+\textbf{P. Pham}, K. Svore.\\
+U.S. Patent No. 9779359.\\
+Filed: March 14, 2012\\
+Date of Patent: October 3, 2017\\
+
+\vspace{0.5\baselineskip}
+
+``\href{https://patents.google.com/patent/US7246353}{Method and system for managing the execution of threads and data processing.}''\\
+A. Forin, J. Helander, \textbf{P. Pham}.\\
+U.S. Patent No. 7246353B2.\\
+Filed on June 12, 2002.
+Date of Patent: July 17, 2007\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+
+{\bf MIT ACM/IEEE Programming Competition} \hfill Cambridge, Massachusetts
+\marginpar{{\bf Community}}
+
+{\em Contest Chair, Lead Developer, Organizer} \hfill 2001-2003\marginpar{{\bf Building}}
+\vspace{0.5\baselineskip}
+\par
+
+\url{http://www.battlecode.org}\\
+\url{http://web.mit.edu/ieee/6.370/2003/web/}\\
+Created a long-running
+programming competition for real-time strategy artificial intelligence
+(AI) agents, which matches winning student contestants with corporate
+sponsors that now include
+Dropbox, Blizzard Entertainment, Amazon, Google, Oracle, D.E. Shaw, Akamai.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\baselineskip}
+\par
+{\bf {Microsoft Research}} \hfill Seattle, WA\marginpar{{\bf Research}}
+\par
+{\em Research Intern} \hfill June---August 2011\marginpar{{\bf Experience}}
+\par
+\href{http://research.microsoft.com/en-us/groups/quarc/default.aspx}{Quantum Architectures and Computation Group}
+\par
+Mentor: Krysta Svore
+\par
+Designed a 2D nearest-neighbor quantum architecture for period-finding with
+depth $O(L \log L)$ for factoring an $L$-bit integer. Pending patent
+application.
+
+\vspace{\baselineskip}
+\par
+{\bf {University of Washington Dept. of Physics and Astronomy}} \hfill Seattle, WA
+\par
+{\em Graduate Research Assistant} \hfill January---July 2007, May---June 2010
+\par
+\href{http://depts.washington.edu/qcomp/}{Trapped Ion Quantum Computing Group}
+\par
+Advisor: Prof. Boris Blinov
+\par
+Built a programmable radio-frequency system for ion trap control including
+photomultiplier tube input counting.
+
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf Max Planck Institute for Quantum Optics} \hfill Garching, Germany
+\par
+{\em Visiting Ph.D. Student} \hfill July 2005---August 2005
+\par
+\href{http://www.mpq.mpg.de/qsim/}{Quantum Analog Simulation Group}
+\par
+Advisor: Dr. Tobias Sch\"atz
+\par
+Built a programmable radio-frequency system for ion trap control with phase-coherent
+frequency-switching.
+
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf University of Innsbruck} \hfill Innsbruck, Austria
+\par
+{\em Visiting Ph.D. Student} \hfill February 2005---June 2005
+\par
+\href{http://heart-c704.uibk.ac.at/index.html}{Quantum Optics and Spectroscopy Group}
+\par
+Advisor: Univ. Prof. Rainer Blatt
+\par
+Built a programmable radio-frequency system for ion trap control with shaped amplitudes.
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf MIT Center for Bits and Atoms} \hfill Cambridge, Massachusetts
+\par
+{\em Graduate Research Assistant} \hfill September 2003---January 2005
+\par
+\href{http://web.mit.edu/~cua/www/quanta/}{quanta Research Group}
+\par
+Advisor: Prof. Isaac Chuang
+\par
+Designed and built instrumentation for quantum computing experiments.
+\par
+
+\vspace{\baselineskip}
+\par
+{\bf Microsoft Research} \hfill Redmond, WA
+\par
+{\em Research Intern} \hfill June 2001---September 2001
+\par
+\href{http://research.microsoft.com/en-us/projects/mic/default.aspx}{Invisible Computing Group}\hfill June 2003---August 2003
+\par
+Mentors: Alessandro Forin, Johannes Helander
+\par
+Added work items to the scheduler of an embedded real-time kernel.
+Designed and assembled the electronics for a wireless sensor demo.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf Gordon Radlein}
+\marginpar{{\bf References}}\\
+Senior Director of Engineering\\
+Etsy\\
+117 Adams St\\
+Brooklyn, NY 11237\\
+E-mail: gordon@etsy.com
+
+\par
+\vspace{\baselineskip}
+{\bf Krysta Svore}\\
+Researcher\\
+Microsoft Research\\
+1 Microsoft Way\\
+Redmond, WA 98052\\
+Phone: (425) 421-6996\\
+E-mail: \url{ksvore@microsoft.com}\\
+
+\end{document}
+
+
+
+
